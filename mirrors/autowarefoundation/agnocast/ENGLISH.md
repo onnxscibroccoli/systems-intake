@@ -48,7 +48,11 @@ Values named for this upstream: economic, everyday.
 
 ## Translated passages
 
-(translation call failed: HTTPError)
+Non-English lines were found. Set the XAI_API_KEY secret on this repository to translate them on the next run.
+
+```
+- ROSCon JP 2025, Nagoya: "CallbackIsolatedExecutor: 二重スケジューリングを不要にする新しいExecutorとスケジューリング理論" by Takahiro Ishikawa-Aso ([video](https://vimeo.com/1122709186), in Japanese; an English summary is available on the [TIER IV tech blog](https://medium.com/tier-iv-tech-blog/callbackisolatedexecutor-a-novel-executor-that-eliminates-nested-scheduling-in-scheduling-theory-400b0131ed75))
+```
 
 ## README checked
 

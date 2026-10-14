@@ -48,7 +48,11 @@ Values named for this upstream: everyday, community.
 
 ## Translated passages
 
-(translation call failed: HTTPError)
+Non-English lines were found. Set the XAI_API_KEY secret on this repository to translate them on the next run.
+
+```
+[![中文介绍](https://img.shields.io/badge/中文介绍-07C160?logo=wechat&logoColor=white)](https://mp.weixin.qq.com/s/HqnBlTNqOL3Z4Kg8tLHCSw)
+```
 
 ## README checked
 
