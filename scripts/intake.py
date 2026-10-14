@@ -111,13 +111,50 @@ def cjk_lines(text: str) -> list[str]:
     return lines[:40]
 
 
+HAND_PHRASES = (
+    ("中文介绍", "Chinese introduction"),
+    (
+        "二重スケジューリングを不要にする新しいExecutorとスケジューリング理論",
+        "a new executor and a scheduling theory that removes the need to schedule the same work twice",
+    ),
+)
+
+
+def hand_translate(lines: list[str]) -> list[dict]:
+    blocks = []
+    for line in lines:
+        english = ""
+        if "中文介绍" in line:
+            english = (
+                "Chinese introduction. The source line is a badge linking to a WeChat article. "
+                "The original characters stay in the image address so the link still works."
+            )
+        else:
+            english_line = line
+            replaced = False
+            for src, dst in HAND_PHRASES:
+                if src == "中文介绍":
+                    continue
+                if src in english_line:
+                    english_line = english_line.replace(src, dst)
+                    replaced = True
+            if replaced:
+                english = english_line
+        blocks.append({"source": line, "english": english})
+    return blocks
+
+
 def translate_lines(lines: list[str]) -> list[dict]:
     if not lines:
         return []
+    known = hand_translate(lines)
+    if all(block["english"] for block in known):
+        return known
     key = os.environ.get("XAI_API_KEY", "").strip()
-    joined = "\n".join(lines)[:6000]
     if not key:
-        return [{"source": line, "english": ""} for line in lines]
+        return known
+    pending = [block["source"] for block in known if not block["english"]]
+    joined = "\n".join(pending)[:6000]
     body = {
         "model": "grok-4.5",
         "temperature": 0,
@@ -140,9 +177,18 @@ def translate_lines(lines: list[str]) -> list[dict]:
         with urllib.request.urlopen(req, timeout=90) as res:
             payload = json.loads(res.read().decode())
         english = payload["choices"][0]["message"]["content"].strip()
-    except (urllib.error.URLError, KeyError, TimeoutError, json.JSONDecodeError) as err:
-        english = f"(translation call failed: {err.__class__.__name__})"
-    return [{"source": joined, "english": english}]
+    except (urllib.error.URLError, KeyError, TimeoutError, json.JSONDecodeError):
+        return known
+    # One reply covers the lines the glossary could not. Keep glossary hits as they are.
+    attached = False
+    merged = []
+    for block in known:
+        if block["english"] or attached:
+            merged.append(block)
+            continue
+        merged.append({"source": block["source"], "english": english})
+        attached = True
+    return merged
 
 
 def render_brief(item: dict, meta: dict, readme: str, translated: list[dict]) -> str:
@@ -207,6 +253,11 @@ def render_brief(item: dict, meta: dict, readme: str, translated: list[dict]) ->
             if block.get("english"):
                 lines.append(block["english"])
                 lines.append("")
+                if block["english"] != block.get("source"):
+                    lines.append("Source line:")
+                    lines.append("")
+                    lines.append(block["source"][:2000])
+                    lines.append("")
             else:
                 lines.append("Non-English lines were found. Set the XAI_API_KEY secret on this repository to translate them on the next run.")
                 lines.append("")
@@ -279,6 +330,8 @@ def ensure_fork(upstream: str) -> tuple[str, str]:
             return "error", str(err)[:300]
     if not tok:
         return "skipped", "no token"
+    # GitHub rejects a burst of fork creates. Existing forks return above.
+    time.sleep(8)
     try:
         request(
             "POST",

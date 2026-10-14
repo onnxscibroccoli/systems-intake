@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14 04:43 UTC",
+  "generated": "2026-10-14 04:52 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -75,7 +75,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "wrote",
         "workflow": "unchanged"
       }
     },
@@ -101,7 +101,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/HoloAgent",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/HoloAgent/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-",
+        "brief": "wrote",
         "workflow": "unchanged"
       }
     },
@@ -126,7 +126,7 @@
       "translated_blocks": 0,
       "push": {
         "fork": "denied",
-        "detail": "POST https://api.github.com/repos/airecode/AireOfflineTranslate/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "detail": "POST https://api.github.com/repos/airecode/AireOfflineTranslate/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     },
     {
@@ -137,7 +137,7 @@
       "translated_blocks": 0,
       "push": {
         "fork": "denied",
-        "detail": "POST https://api.github.com/repos/m-mekhlafi/Quantum-Core-/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "detail": "POST https://api.github.com/repos/m-mekhlafi/Quantum-Core-/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     },
     {
@@ -148,7 +148,7 @@
       "translated_blocks": 0,
       "push": {
         "fork": "denied",
-        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     }
   ],
