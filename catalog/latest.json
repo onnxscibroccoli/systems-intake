@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14 04:40 UTC",
+  "generated": "2026-10-14 04:42 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -8,10 +8,10 @@
       "readme_chars": 5244,
       "translated_blocks": 0,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/Shizuku",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -21,10 +21,10 @@
       "readme_chars": 4193,
       "translated_blocks": 0,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/nvgt-bridge",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -34,10 +34,10 @@
       "readme_chars": 555,
       "translated_blocks": 0,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/A11y-Box-Android",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -47,10 +47,10 @@
       "readme_chars": 296,
       "translated_blocks": 0,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/android-accessibility-resources",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -60,10 +60,10 @@
       "readme_chars": 25652,
       "translated_blocks": 0,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -73,10 +73,10 @@
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -86,10 +86,10 @@
       "readme_chars": 4830,
       "translated_blocks": 0,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "wrote",
-        "workflow": "wrote"
+        "brief": "unchanged",
+        "workflow": "unchanged"
       }
     },
     {
@@ -99,10 +99,56 @@
       "readme_chars": 6711,
       "translated_blocks": 1,
       "push": {
-        "fork": "created",
+        "fork": "exists",
         "detail": "onnxscibroccoli/HoloAgent",
+        "brief": "unchanged",
+        "workflow": "unchanged"
+      }
+    },
+    {
+      "upstream": "Magi-Labs/mobilemcp",
+      "license": "MIT",
+      "pushed": "2026-10-12T16:17:56Z",
+      "readme_chars": 21213,
+      "translated_blocks": 0,
+      "push": {
+        "fork": "created",
+        "detail": "onnxscibroccoli/mobilemcp",
         "brief": "wrote",
         "workflow": "wrote"
+      }
+    },
+    {
+      "upstream": "airecode/AireOfflineTranslate",
+      "license": "Apache-2.0",
+      "pushed": "2026-08-15T16:54:24Z",
+      "readme_chars": 15049,
+      "translated_blocks": 0,
+      "push": {
+        "fork": "denied",
+        "detail": "POST https://api.github.com/repos/airecode/AireOfflineTranslate/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+      }
+    },
+    {
+      "upstream": "m-mekhlafi/Quantum-Core-",
+      "license": "Apache-2.0",
+      "pushed": "2026-06-23T13:22:37Z",
+      "readme_chars": 2502,
+      "translated_blocks": 0,
+      "push": {
+        "fork": "denied",
+        "detail": "POST https://api.github.com/repos/m-mekhlafi/Quantum-Core-/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+      }
+    },
+    {
+      "upstream": "DezMetal/StreamAudio",
+      "license": "Apache-2.0",
+      "pushed": "2026-09-21T14:59:44Z",
+      "readme_chars": 9622,
+      "translated_blocks": 0,
+      "push": {
+        "fork": "denied",
+        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     }
   ],

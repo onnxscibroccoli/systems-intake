@@ -215,6 +215,94 @@
         }
       ],
       "other_agents": "Publish the loop. Let another runtime implement verify however it can measure the world. Do not require their users to buy a particular robot."
+    },
+    {
+      "upstream": "Magi-Labs/mobilemcp",
+      "license": "MIT",
+      "fits": ["broccoli-core", "Grasshopper", "broccoli-rish"],
+      "values": ["everyday", "disability", "economic"],
+      "summary": "An MCP server and Android app that exposes the accessibility tree, with stable node refs, to an agent. Taps and typing go through that tree. MIT. Found by the intake search, then added by hand.",
+      "plain": "Already English. This is the closest public match to broccoli's job: the phone describes itself in words a screen reader would also use, and the agent asks for a labeled action.",
+      "use": "Grasshopper can call it as an external tool. broccoli-core remains the on-device kernel. Do not run both as competing clickers. Pick one executor per request.",
+      "do_not": "Do not point it at a banking app and let a remote model drive it. Do not turn off TalkBack to make the refs easier.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "Register mobilemcp as a tool with a device id. Task inputs are a node ref and an action. The task log stores the ref and the result, not a screenshot, unless a person asked for one frame."
+        },
+        {
+          "repo": "broccoli-core",
+          "how": "If both can see the tree, broccoli stays the executor for requests that already go through rish. mobilemcp is the path for an agent that only speaks MCP."
+        }
+      ],
+      "other_agents": "Any MCP client can use the same server. The contract is node-ref in, result out. The phone does the click. The model does not get a video stream by default."
+    },
+    {
+      "upstream": "airecode/AireOfflineTranslate",
+      "license": "Apache-2.0",
+      "fits": ["dectalk-live", "broccoli-core"],
+      "values": ["disability", "everyday", "economic", "community"],
+      "summary": "Face-to-face translation on an Android phone. Speech recognition, translation, and speech synthesis stay on the device after the model download. Apache-2.0.",
+      "plain": "Already English. The economic point is the same as DECtalk: once the model is local, a conversation is not a metered API call.",
+      "use": "DECtalk speaks English with a known voice and no download. AireOfflineTranslate covers the case where the other person speaks another language. They solve different sentences. Neither should upload the audio.",
+      "do_not": "Do not send the microphone stream to a cloud translator as a fallback without an on-screen switch the person can see.",
+      "integrate": [
+        {
+          "repo": "dectalk-live",
+          "how": "Keep DECtalk for short English prompts and confirmations. Link AireOfflineTranslate, do not embed its model, when the task is a two-language conversation."
+        },
+        {
+          "repo": "broccoli-core",
+          "how": "A tick that needs a translation returns 'use the on-device translator' rather than calling a paid endpoint."
+        }
+      ],
+      "other_agents": "Offer translate_local as a tool that fails closed when the model is not downloaded. Do not silently switch to a hosted model."
+    },
+    {
+      "upstream": "m-mekhlafi/Quantum-Core-",
+      "license": "Apache-2.0",
+      "fits": ["dectalk-live", "Grasshopper", "helix"],
+      "values": ["everyday", "economic", "community"],
+      "summary": "A small local assistant page: Whisper for speech-to-text, Ollama for the model, Kokoro for speech. Apache-2.0. The person runs all three on their own machine.",
+      "plain": "Already English. Useful as a reference wiring diagram, not as a dependency to vendor.",
+      "use": "Grasshopper tasks can call a local Ollama only when the machine has it. DECtalk remains the zero-download English voice. Kokoro is the higher-quality local voice when the person has installed it.",
+      "do_not": "Do not require a particular GPU. Do not hide a cloud key in the page.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "A task type local-model stores the endpoint as 127.0.0.1 and refuses any other host."
+        },
+        {
+          "repo": "dectalk-live",
+          "how": "If Kokoro is absent, speak with DECtalk. Absence is a normal state, not an error to paper over."
+        },
+        {
+          "repo": "helix",
+          "how": "The browser desktop can open this page on the local machine. It should not proxy the audio off the box."
+        }
+      ],
+      "other_agents": "Bind the model, the recognizer, and the voice to localhost. Document the three ports. Another runtime can swap Ollama for a different local server if the contract stays host-local."
+    },
+    {
+      "upstream": "DezMetal/StreamAudio",
+      "license": "Apache-2.0",
+      "fits": ["dectalk-live", "Grasshopper"],
+      "values": ["disability", "everyday", "economic"],
+      "summary": "A long-lived local text-to-speech daemon using Piper, so the first word is not waiting on a process start. Apache-2.0.",
+      "plain": "Already English. DECtalk is the in-browser voice with no install. StreamAudio is the desktop voice when someone wants a different speaker and can run a daemon.",
+      "use": "Grasshopper confirmations on a workstation can go to the daemon. Phone confirmations stay on DECtalk. Same sentence, two speakers, neither billed per character.",
+      "do_not": "Do not add a network listener on 0.0.0.0. The daemon binds to localhost.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "A notifier calls http://127.0.0.1 only. If the daemon is down, write the sentence to the task log and, on a phone path, hand it to DECtalk."
+        },
+        {
+          "repo": "dectalk-live",
+          "how": "Do not replace the WASM voice. Offer StreamAudio as the workstation option in the docs, not as a hard dependency."
+        }
+      ],
+      "other_agents": "A speak tool with a required host of 127.0.0.1. Other stacks can point that tool at Piper, DECtalk, or Kokoro. The model only passes text."
     }
   ],
   "not_forked": [
