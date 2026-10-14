@@ -1,0 +1,242 @@
+{
+  "owner": "onnxscibroccoli",
+  "purpose": "Fork permissive upstreams, keep an English operator brief, and show how each one fits the repositories this account already runs.",
+  "owned": [
+    {
+      "repo": "broccoli-core",
+      "role": "Phone-side automation kernel. Text becomes a classified action, then a confirmed result, on the device."
+    },
+    {
+      "repo": "broccoli-rish",
+      "role": "The Shizuku/rish transport. The phone stays the executor."
+    },
+    {
+      "repo": "dectalk-live",
+      "role": "Speech in the browser. No remote voice meter. WAV stays on the machine."
+    },
+    {
+      "repo": "Grasshopper",
+      "role": "Agent control plane: tasks, locks, state, recovery. Reproducible from source."
+    },
+    {
+      "repo": "helix",
+      "role": "A persistent desktop in the browser, for people who do not have a workstation."
+    },
+    {
+      "repo": "kiln",
+      "role": "Linux desktop in the browser, with searchable images and a Git clone path."
+    },
+    {
+      "repo": "noVNC",
+      "role": "Fork of the web VNC client those desktops speak."
+    },
+    {
+      "repo": "oauth2-proxy",
+      "role": "Fork of the login proxy in front of a shared desktop."
+    },
+    {
+      "repo": "newsroom-desk",
+      "role": "Plain-language investigations, including Android accessibility and what a phone is allowed to do in the background."
+    },
+    {
+      "repo": "morphe-patches",
+      "role": "Human-written Android patches for apps a person already has."
+    },
+    {
+      "repo": "lattice-audit",
+      "role": "Public note that Lattice is not a fund and not a promised return."
+    }
+  ],
+  "targets": [
+    {
+      "upstream": "RikkaApps/Shizuku",
+      "license": "Apache-2.0",
+      "fits": ["broccoli-core", "broccoli-rish", "shizuku-silent-mic"],
+      "values": ["everyday", "disability", "economic"],
+      "summary": "Shizuku lets an ordinary Android app use ADB-level APIs through a small service the person starts themselves, instead of requiring root.",
+      "plain": "The upstream README is already English. This brief is the operator version: what to pin, what not to fork away from, and where broccoli-rish already depends on it.",
+      "use": "broccoli-rish is the transport. Shizuku is the privilege boundary. Keep them separate. The phone runs the command. A cloud agent only sends the text of the request.",
+      "do_not": "Do not hide the Shizuku start step. Do not ship a private fork that drifts from upstream security fixes. Do not use the API to click through another app's purchase screen.",
+      "integrate": [
+        {
+          "repo": "broccoli-rish",
+          "how": "Keep lib/rish_run.sh as the only wrapper. Record the upstream Shizuku release it was tested against in the brief's commit, not in a screenshot."
+        },
+        {
+          "repo": "broccoli-core",
+          "how": "The kernel tick may call rish. It must not shell out to su. If Shizuku is not running, the tick returns a spoken and written 'not ready' instead of a fake success."
+        },
+        {
+          "repo": "dectalk-live",
+          "how": "Speak that 'not ready' locally. Do not send the failure text to a paid voice API."
+        }
+      ],
+      "other_agents": "Any agent runtime can use the same split. The agent emits a request. A local executor holding Shizuku permission runs it. The agent never receives a shell on the phone."
+    },
+    {
+      "upstream": "trypsynth/nvgt-bridge",
+      "license": "MIT",
+      "fits": ["broccoli-core", "dectalk-live", "newsroom-desk"],
+      "values": ["disability", "everyday", "community"],
+      "summary": "A small Kotlin accessibility service that gives an audio game direct touch while TalkBack keeps menus, dialogs, and the keyboard.",
+      "plain": "Already English. The pattern matters more than the game: one channel for the screen reader, a different channel for the single gesture the person asked for.",
+      "use": "Broccoli should observe the accessibility tree and leave TalkBack in charge of system UI. Grabbing the whole screen is how automation breaks a blind user's phone.",
+      "do_not": "Do not disable TalkBack. Do not read notification text off the device to a remote model.",
+      "integrate": [
+        {
+          "repo": "broccoli-core",
+          "how": "Prefer accessibility-node actions (click a labeled node) over coordinates. If TalkBack is on, do not steal focus from it except for the node named in the request."
+        },
+        {
+          "repo": "dectalk-live",
+          "how": "DECtalk is an extra voice for app results. It is not a replacement for the system screen reader."
+        },
+        {
+          "repo": "newsroom-desk",
+          "how": "When a story is about background control of a phone, this bridge is the counter-example: the user can tell which layer has the gesture."
+        }
+      ],
+      "other_agents": "Expose two tools to the model: speak_result and activate_labeled_node. Do not expose a raw swipe-anywhere tool when a screen reader is on."
+    },
+    {
+      "upstream": "rwapp/A11y-Box-Android",
+      "license": "MIT",
+      "fits": ["broccoli-core", "newsroom-desk"],
+      "values": ["disability", "community", "everyday"],
+      "summary": "A small sample app of Android accessibility APIs: labels, focus, and the checks a developer is supposed to run.",
+      "plain": "Already English. Use it as a fixture, not as a product. It shows the node properties broccoli should require before it will click.",
+      "use": "A control is fair game for automation only when it has a name a person using a screen reader would also hear.",
+      "do_not": "Do not treat an unlabeled button as acceptable because a vision model can guess it.",
+      "integrate": [
+        {
+          "repo": "broccoli-core",
+          "how": "Add an offline fixture, copied under its MIT license with the copyright kept, that the kernel uses in smoke tests: refuse to activate a node with an empty content description."
+        },
+        {
+          "repo": "newsroom-desk",
+          "how": "Cite the sample when explaining why a banking or chat app that hides the label fails both disabled users and any honest automation."
+        }
+      ],
+      "other_agents": "Put the accessibility tree, not a screenshot, in the tool result. Screenshots are a fallback when the tree is empty, and they should stay on the device."
+    },
+    {
+      "upstream": "dotjay/android-accessibility-resources",
+      "license": "MIT",
+      "fits": ["newsroom-desk", "broccoli-core"],
+      "values": ["community", "disability"],
+      "summary": "A short, maintained-by-people reading list for designing and building accessible Android apps.",
+      "plain": "Already English. Fork it so the reading list has a stable copy if the upstream goes quiet. Do not rewrite their links as if they were ours.",
+      "use": "Newsroom Desk can point readers at primary accessibility writing instead of paraphrasing it.",
+      "do_not": "Do not paste the list into a model prompt and publish the model's summary as the list.",
+      "integrate": [
+        {
+          "repo": "newsroom-desk",
+          "how": "Link the upstream and the fork from the Android accessibility story's record page. The record holds the URL. The story holds the finding."
+        }
+      ],
+      "other_agents": "Give an agent this list as allowed reading. Do not let it invent citations that are not on the list."
+    },
+    {
+      "upstream": "AtsushiSakai/PythonRobotics",
+      "license": "MIT",
+      "fits": ["Grasshopper", "broccoli-core"],
+      "values": ["community", "economic", "everyday"],
+      "summary": "One-file Python references for localization, SLAM, path planning, and obstacle avoidance. A textbook, not a vehicle stack.",
+      "plain": "Already English. The value is that a person can run a planner on a laptop they own and read every line.",
+      "use": "A Grasshopper task can shell out to one example script for a local plan. The result is a path, not a subscription.",
+      "do_not": "Do not put this code on a car. Do not wrap it in a paid API and strip the MIT notice.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "Register a task type local-python. The task record stores the script path, the inputs, and the stdout. Recovery replays the same command. No network in the task."
+        },
+        {
+          "repo": "broccoli-core",
+          "how": "Only if the phone image actually has the script. Otherwise the tick says the planner is not installed. Do not pretend."
+        }
+      ],
+      "other_agents": "Call the script as a tool with a working directory and a timeout. Return the path geometry. Keep the MIT copyright in the tool's about text."
+    },
+    {
+      "upstream": "autowarefoundation/agnocast",
+      "license": "Apache-2.0",
+      "fits": ["Grasshopper", "helix"],
+      "values": ["economic", "everyday"],
+      "summary": "ROS 2 middleware that moves large messages between processes without copying them. Includes a Linux kernel module. Apache-2.0.",
+      "plain": "Already English. Do not build the kernel module for this account. Copy the rule: agents pass a handle to bytes, they do not paste the bytes through a chat model.",
+      "use": "Grasshopper tasks that move logs, images, or desktop frames should pass a path or an id. The model sees a description and a size, not the payload.",
+      "do_not": "Do not load agnocast-kmod on a phone, a shared desktop, or a CI runner. Do not vendor the C++ into broccoli.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "Task inputs over a size limit become a resource id in the control plane. The executing environment opens the resource. The model is given the id and a one-line description."
+        },
+        {
+          "repo": "helix",
+          "how": "A desktop stream already should not be base64'd into an agent prompt. Keep the RFB session in the browser. The agent gets a screenshot only when a person asks for one frame."
+        }
+      ],
+      "other_agents": "Same rule on any runtime. Tool results carry ids. A separate local reader opens the bytes. This is how a person avoids paying a model to reread a log they already have on disk."
+    },
+    {
+      "upstream": "autowarefoundation/auto_e2e",
+      "license": "Apache-2.0",
+      "fits": ["Grasshopper"],
+      "values": ["community", "everyday"],
+      "summary": "Camera-only driving model from the Autoware Foundation. The public checkpoint can run without an HD map. It is not a phone app.",
+      "plain": "Already English at the README. Treat it as a contract example: sensors in, a proposed path out, a person or a rule stack can reject the path.",
+      "use": "Grasshopper can record that shape of task (proposal, then veto) for any local model. The veto is the product. The network is not allowed to act alone.",
+      "do_not": "Do not claim this checkpoint runs in Termux. Do not connect it to a vehicle from this account. Respect the checkpoint's own notice on the model card.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "Model a task state machine: proposed, accepted, rejected. Store who accepted. A model task that skips accepted is a failed task."
+        }
+      ],
+      "other_agents": "If you run your own camera model, publish the input size, the license, and the fact that a rule can override it. Do not hide the model behind a brand name."
+    },
+    {
+      "upstream": "HorizonRobotics/HoloAgent",
+      "license": "Apache-2.0",
+      "fits": ["Grasshopper", "broccoli-core"],
+      "values": ["everyday", "community"],
+      "summary": "An embodied-agent loop from Horizon Robotics: observe, retrieve, plan, act, verify, with a memory of the place. The project as a whole is Apache-2.0. Some bundled third-party SLAM pieces are not cleared for commercial use.",
+      "plain": "The README checked for this intake is English. Any Chinese comment or doc the daily job finds is translated below under Translated passages. The loop is the part worth copying. The weights and the restricted SLAM trees are not.",
+      "use": "Grasshopper's tick already has execute and confirm. Add a verify step that checks the world, not the model's own claim of success. Broccoli's confirm step is the phone version of the same idea.",
+      "do_not": "Do not import FAST-LIVO2 or HOVSG into a product. Their default licenses restrict commercial use. Do not download robot checkpoints into the phone repo.",
+      "integrate": [
+        {
+          "repo": "Grasshopper",
+          "how": "Name the task states observe, plan, act, verify. verify reads a local sensor or a test, not the model's summary of itself."
+        },
+        {
+          "repo": "broccoli-core",
+          "how": "After a tick changes a setting, read the setting back through the accessibility tree or a local API. That read is verify."
+        }
+      ],
+      "other_agents": "Publish the loop. Let another runtime implement verify however it can measure the world. Do not require their users to buy a particular robot."
+    }
+  ],
+  "not_forked": [
+    {
+      "upstream": "Yamato-Security/hayabusa",
+      "reason": "AGPL-3.0. Useful as a defensive Windows log tool. Not forked, so that license is not pulled into this account's runtime."
+    },
+    {
+      "upstream": "bilawalsidhu/gods-eye-view",
+      "reason": "MIT, but it is a live surveillance-style globe, including camera layers. Not forked and not wired into the phone or desktop repos."
+    },
+    {
+      "upstream": "sqlmapproject/sqlmap",
+      "reason": "Not a component of these repos. Not forked. No procedure is included."
+    },
+    {
+      "upstream": "Sense-GVT/Fast-BEV",
+      "reason": "License file was empty on the check. Not forked until a SPDX license is present."
+    },
+    {
+      "upstream": "generalized-intelligence/GAAS",
+      "reason": "BSD-3-Clause, but the tree is hundreds of megabytes and idle. Not forked. The aviation stack is not part of the phone or desktop work."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: daily-intake
+
+on:
+  schedule:
+    # 11:15 UTC, every day. Fork sync workflows run at 11:45 UTC.
+    - cron: "15 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read upstreams, write English briefs, fork when allowed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          INTAKE_TOKEN: ${{ secrets.INTAKE_TOKEN }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          OWNER: onnxscibroccoli
+        run: python scripts/intake.py --fork --push-forks
+
+      - name: Commit the catalog
+        run: |
+          git config user.name "systems-intake"
+          git config user.email "304189395+onnxscibroccoli@users.noreply.github.com"
+          git add catalog mirrors docs
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "Daily intake"
+            git push
+          fi
