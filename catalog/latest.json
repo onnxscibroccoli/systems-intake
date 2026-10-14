@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14 04:52 UTC",
+  "generated": "2026-10-14 15:49 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -75,7 +75,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "wrote",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -101,7 +101,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/HoloAgent",
-        "brief": "wrote",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -126,7 +126,7 @@
       "translated_blocks": 0,
       "push": {
         "fork": "denied",
-        "detail": "POST https://api.github.com/repos/airecode/AireOfflineTranslate/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "detail": "POST https://api.github.com/repos/airecode/AireOfflineTranslate/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     },
     {
@@ -137,7 +137,7 @@
       "translated_blocks": 0,
       "push": {
         "fork": "denied",
-        "detail": "POST https://api.github.com/repos/m-mekhlafi/Quantum-Core-/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "detail": "POST https://api.github.com/repos/m-mekhlafi/Quantum-Core-/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     },
     {
@@ -148,11 +148,20 @@
       "translated_blocks": 0,
       "push": {
         "fork": "denied",
-        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"was submitted too quickly\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     }
   ],
   "discovered": [
+    {
+      "upstream": "anonymousagyat/Anotxt",
+      "license": "MIT",
+      "description": "Android background text recording and accessibility service utility.",
+      "updated": "2026-10-14T11:22:06Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
     {
       "upstream": "Magi-Labs/mobilemcp",
       "license": "MIT",
