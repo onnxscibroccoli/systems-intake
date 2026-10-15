@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14 15:49 UTC",
+  "generated": "2026-10-15 15:35 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -154,11 +154,20 @@
   ],
   "discovered": [
     {
+      "upstream": "macbuildssys/ConsentGuard",
+      "license": "MIT",
+      "description": "Android accessibility service that auto-rejects cookie and tracking consent banners.",
+      "updated": "2026-10-14T19:25:32Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "anonymousagyat/Anotxt",
       "license": "MIT",
       "description": "Android background text recording and accessibility service utility.",
       "updated": "2026-10-14T11:22:06Z",
-      "stars": 0,
+      "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -167,7 +176,7 @@
       "license": "MIT",
       "description": "Let AI agents use your real Android phone through its accessibility service: screen tree with stable refs, taps, typing, gestures, notifications, apps. MCP server + hub + app.",
       "updated": "2026-10-12T16:17:56Z",
-      "stars": 0,
+      "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -185,15 +194,6 @@
       "license": "MIT",
       "description": "Unofficial: swipe right in the Claude Android app to open its sidebar (accessibility service, no internet permission)",
       "updated": "2026-10-11T16:26:10Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "wolverinesingh1-droid/skipper-android",
-      "license": "MIT",
-      "description": "Android Accessibility Service that skips ads in YouTube and YouTube Music",
-      "updated": "2026-10-10T20:05:44Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
