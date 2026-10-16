@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15 15:35 UTC",
+  "generated": "2026-10-16 15:22 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,13 +69,13 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-10T07:38:43Z",
+      "pushed": "2026-10-16T11:29:47Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
@@ -154,6 +154,15 @@
   ],
   "discovered": [
     {
+      "upstream": "maminks/vol-change-buttons-media",
+      "license": "MIT",
+      "description": "Skip tracks by holding the volume buttons \u2014 no root needed (Android accessibility service).",
+      "updated": "2026-10-16T10:21:15Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "macbuildssys/ConsentGuard",
       "license": "MIT",
       "description": "Android accessibility service that auto-rejects cookie and tracking consent banners.",
@@ -185,15 +194,6 @@
       "license": "MIT",
       "description": "C++20 host library and C ABI for sending HID input (keyboard, mouse, gamepad, touchscreen, pen) to Android over USB via AOA 2.0 \u2014 no root, no ADB, and no accessibility service required on the device.",
       "updated": "2026-10-12T00:33:12Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "watatatata810/swipe-drawer-for-claude",
-      "license": "MIT",
-      "description": "Unofficial: swipe right in the Claude Android app to open its sidebar (accessibility service, no internet permission)",
-      "updated": "2026-10-11T16:26:10Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
