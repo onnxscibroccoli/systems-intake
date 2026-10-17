@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16 15:22 UTC",
+  "generated": "2026-10-17 14:12 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -75,7 +75,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -154,6 +154,24 @@
   ],
   "discovered": [
     {
+      "upstream": "sPROFFEs/vitreo-launcher",
+      "license": "MIT",
+      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
+      "updated": "2026-10-17T11:43:12Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "Musheer360/SwiftSlate",
+      "license": "MIT",
+      "description": "Android accessibility service for AI-powered text transformation",
+      "updated": "2026-10-16T23:14:19Z",
+      "stars": 667,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "maminks/vol-change-buttons-media",
       "license": "MIT",
       "description": "Skip tracks by holding the volume buttons \u2014 no root needed (Android accessibility service).",
@@ -177,24 +195,6 @@
       "description": "Android background text recording and accessibility service utility.",
       "updated": "2026-10-14T11:22:06Z",
       "stars": 1,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "Magi-Labs/mobilemcp",
-      "license": "MIT",
-      "description": "Let AI agents use your real Android phone through its accessibility service: screen tree with stable refs, taps, typing, gestures, notifications, apps. MCP server + hub + app.",
-      "updated": "2026-10-12T16:17:56Z",
-      "stars": 1,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "nemarpuc/libaoahid",
-      "license": "MIT",
-      "description": "C++20 host library and C ABI for sending HID input (keyboard, mouse, gamepad, touchscreen, pen) to Android over USB via AOA 2.0 \u2014 no root, no ADB, and no accessibility service required on the device.",
-      "updated": "2026-10-12T00:33:12Z",
-      "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
