@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17 14:12 UTC",
+  "generated": "2026-10-18 14:33 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,26 +69,26 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-16T11:29:47Z",
+      "pushed": "2026-10-18T12:58:50Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-10T17:25:44Z",
-      "readme_chars": 4830,
+      "pushed": "2026-10-17T17:45:06Z",
+      "readme_chars": 7515,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/auto_e2e/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
@@ -154,47 +154,47 @@
   ],
   "discovered": [
     {
+      "upstream": "jayantverma5543-cmyk/Sahayak-Delhi-Mobile-App",
+      "license": "MIT",
+      "description": "An Android citizen-assistance app for Delhi, bringing emergency support, healthcare guidance, local services, and AI-assisted information into one accessible platform.",
+      "updated": "2026-10-18T14:32:58Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
       "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-17T11:43:12Z",
+      "updated": "2026-10-18T13:47:16Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "Musheer360/SwiftSlate",
+      "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
-      "description": "Android accessibility service for AI-powered text transformation",
-      "updated": "2026-10-16T23:14:19Z",
-      "stars": 667,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "maminks/vol-change-buttons-media",
-      "license": "MIT",
-      "description": "Skip tracks by holding the volume buttons \u2014 no root needed (Android accessibility service).",
-      "updated": "2026-10-16T10:21:15Z",
+      "description": "C++20 host library and C ABI for sending HID input (keyboard, mouse, gamepad, touchscreen, pen) to Android over USB via AOA 2.0 \u2014 no root, no ADB, and no accessibility service required on the device.",
+      "updated": "2026-10-18T05:12:08Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "macbuildssys/ConsentGuard",
+      "upstream": "5omeOtherGuy/operator",
       "license": "MIT",
-      "description": "Android accessibility service that auto-rejects cookie and tracking consent banners.",
-      "updated": "2026-10-14T19:25:32Z",
+      "description": "A local LLM that operates an Android phone: on-device model plus an accessibility-service app",
+      "updated": "2026-10-18T02:59:10Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "anonymousagyat/Anotxt",
+      "upstream": "Josh-Reimer/nodetree-demo",
       "license": "MIT",
-      "description": "Android background text recording and accessibility service utility.",
-      "updated": "2026-10-14T11:22:06Z",
-      "stars": 1,
+      "description": "Demo: visualize what an Android accessibility service can read from other apps (recreates the live view-tree scraping technique). No network permission.",
+      "updated": "2026-10-17T17:42:21Z",
+      "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
