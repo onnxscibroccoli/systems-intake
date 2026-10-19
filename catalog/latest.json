@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18 14:33 UTC",
+  "generated": "2026-10-19 17:28 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,7 +69,7 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-18T12:58:50Z",
+      "pushed": "2026-10-19T05:41:33Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -82,7 +82,7 @@
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-17T17:45:06Z",
+      "pushed": "2026-10-19T16:52:48Z",
       "readme_chars": 7515,
       "translated_blocks": 0,
       "push": {
@@ -147,17 +147,17 @@
       "readme_chars": 9622,
       "translated_blocks": 0,
       "push": {
-        "fork": "denied",
-        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
+        "fork": "error",
+        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 500 "
       }
     }
   ],
   "discovered": [
     {
-      "upstream": "jayantverma5543-cmyk/Sahayak-Delhi-Mobile-App",
+      "upstream": "flowangry461-max/sound-overlay-android",
       "license": "MIT",
-      "description": "An Android citizen-assistance app for Delhi, bringing emergency support, healthcare guidance, local services, and AI-assisted information into one accessible platform.",
-      "updated": "2026-10-18T14:32:58Z",
+      "description": "Prototype Android overlay that listens for sounds and draws directional indicators. For accessibility/research/demo. Includes a foreground audio service and overlay sample (starter scaffold).",
+      "updated": "2026-10-19T17:23:31Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -166,7 +166,16 @@
       "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
       "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-18T13:47:16Z",
+      "updated": "2026-10-19T12:48:50Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "jayantverma5543-cmyk/Sahayak-Delhi-Mobile-App",
+      "license": "MIT",
+      "description": "An Android citizen-assistance app for Delhi, bringing emergency support, healthcare guidance, local services, and AI-assisted information into one accessible platform.",
+      "updated": "2026-10-18T15:43:07Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -190,20 +199,20 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "Josh-Reimer/nodetree-demo",
-      "license": "MIT",
-      "description": "Demo: visualize what an Android accessibility service can read from other apps (recreates the live view-tree scraping technique). No network permission.",
-      "updated": "2026-10-17T17:42:21Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "trypsynth/nvgt-bridge",
       "license": "MIT",
       "description": "Android accessibility service that gives NVGT audio games direct touch, while keeping TalkBack for menus, dialogs and the keyboard",
       "updated": "2026-10-06T16:47:22Z",
       "stars": 14,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "Ngoroth/offline-translator-android",
+      "license": "Apache-2.0",
+      "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
+      "updated": "2026-10-19T05:48:43Z",
+      "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -240,15 +249,6 @@
       "description": "A privacy-first, 100% local AI assistant orchestrating speech-to-text (Whisper), intelligence (Ollama LLM), and studio-quality speech synthesis (Kokoro ONNX) into a responsive web interface.",
       "updated": "2026-06-23T13:22:37Z",
       "stars": 1,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "lancer1911/TTS-Offline",
-      "license": "Apache-2.0",
-      "description": "Fully offline, privacy-first text-to-speech synthesis for Apple Silicon. Converts text to natural speech entirely on-device using MLX-accelerated Qwen3-TTS, with multi-voice support, per-sentence emotion control, audiobook-grade dialog production, and voice cloning from reference audio. No cloud, no API calls, no data leaves your Mac.",
-      "updated": "2026-05-24T10:29:01Z",
-      "stars": 3,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
