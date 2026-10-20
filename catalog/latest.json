@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19 17:28 UTC",
+  "generated": "2026-10-20 15:39 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -56,20 +56,20 @@
     {
       "upstream": "AtsushiSakai/PythonRobotics",
       "license": "MIT",
-      "pushed": "2026-10-14T02:37:33Z",
+      "pushed": "2026-10-19T20:03:09Z",
       "readme_chars": 25652,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/PythonRobotics/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#creat",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-19T05:41:33Z",
+      "pushed": "2026-10-20T09:30:51Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -82,7 +82,7 @@
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-19T16:52:48Z",
+      "pushed": "2026-10-20T13:23:27Z",
       "readme_chars": 7515,
       "translated_blocks": 0,
       "push": {
@@ -147,26 +147,35 @@
       "readme_chars": 9622,
       "translated_blocks": 0,
       "push": {
-        "fork": "error",
-        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 500 "
+        "fork": "denied",
+        "detail": "POST https://api.github.com/repos/DezMetal/StreamAudio/forks -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/forks#create-a-fork\",\"status\":\"403\"}"
       }
     }
   ],
   "discovered": [
     {
-      "upstream": "flowangry461-max/sound-overlay-android",
+      "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
-      "description": "Prototype Android overlay that listens for sounds and draws directional indicators. For accessibility/research/demo. Includes a foreground audio service and overlay sample (starter scaffold).",
-      "updated": "2026-10-19T17:23:31Z",
+      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
+      "updated": "2026-10-20T14:58:06Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "sPROFFEs/vitreo-launcher",
+      "upstream": "urtuba/tvkeys",
       "license": "MIT",
-      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-19T12:48:50Z",
+      "description": "Give spare Android TV remote keys a new job. No root, no accessibility service, no input lag.",
+      "updated": "2026-10-20T11:50:16Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "flowangry461-max/sound-overlay-android",
+      "license": "MIT",
+      "description": "Prototype Android overlay that listens for sounds and draws directional indicators. For accessibility/research/demo. Includes a foreground audio service and overlay sample (starter scaffold).",
+      "updated": "2026-10-19T17:23:31Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -190,15 +199,6 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "5omeOtherGuy/operator",
-      "license": "MIT",
-      "description": "A local LLM that operates an Android phone: on-device model plus an accessibility-service app",
-      "updated": "2026-10-18T02:59:10Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "trypsynth/nvgt-bridge",
       "license": "MIT",
       "description": "Android accessibility service that gives NVGT audio games direct touch, while keeping TalkBack for menus, dialogs and the keyboard",
@@ -211,8 +211,8 @@
       "upstream": "Ngoroth/offline-translator-android",
       "license": "Apache-2.0",
       "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
-      "updated": "2026-10-19T05:48:43Z",
-      "stars": 0,
+      "updated": "2026-10-20T11:53:47Z",
+      "stars": 3,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
