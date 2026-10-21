@@ -4,7 +4,7 @@ Upstream: https://github.com/AtsushiSakai/PythonRobotics
 Fork: https://github.com/onnxscibroccoli/PythonRobotics
 License: MIT
 Default branch: master
-Upstream pushed: 2026-10-19T20:03:09Z
+Upstream pushed: 2026-10-21T14:30:14Z
 This file is an operator brief written for this account. It is not a substitute for the upstream license. Copyright stays with the upstream authors. Keep their notice if you copy their code.
 
 ## What it is

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20 15:39 UTC",
+  "generated": "2026-10-21 15:57 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -56,7 +56,7 @@
     {
       "upstream": "AtsushiSakai/PythonRobotics",
       "license": "MIT",
-      "pushed": "2026-10-19T20:03:09Z",
+      "pushed": "2026-10-21T14:30:14Z",
       "readme_chars": 25652,
       "translated_blocks": 0,
       "push": {
@@ -69,7 +69,7 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-20T09:30:51Z",
+      "pushed": "2026-10-21T06:26:32Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -82,8 +82,8 @@
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-20T13:23:27Z",
-      "readme_chars": 7515,
+      "pushed": "2026-10-21T15:16:02Z",
+      "readme_chars": 9713,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
@@ -157,7 +157,16 @@
       "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
       "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-20T14:58:06Z",
+      "updated": "2026-10-21T15:46:19Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "monarchsofchaos004-gif/phoneguard",
+      "license": "MIT",
+      "description": "Elder phone takeover guard: accessibility-service guard + rescue button + encrypted relay. \u9577\u8f29\u624b\u6a5f\u63a5\u7ba1\u5b88\u9580\u54e8",
+      "updated": "2026-10-21T08:34:47Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -185,15 +194,6 @@
       "license": "MIT",
       "description": "An Android citizen-assistance app for Delhi, bringing emergency support, healthcare guidance, local services, and AI-assisted information into one accessible platform.",
       "updated": "2026-10-18T15:43:07Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "nemarpuc/libaoahid",
-      "license": "MIT",
-      "description": "C++20 host library and C ABI for sending HID input (keyboard, mouse, gamepad, touchscreen, pen) to Android over USB via AOA 2.0 \u2014 no root, no ADB, and no accessibility service required on the device.",
-      "updated": "2026-10-18T05:12:08Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
