@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22 15:52 UTC",
+  "generated": "2026-10-23 15:44 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,7 +69,7 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-22T10:21:44Z",
+      "pushed": "2026-10-23T11:15:46Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -82,7 +82,7 @@
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-22T12:05:11Z",
+      "pushed": "2026-10-23T09:38:29Z",
       "readme_chars": 9713,
       "translated_blocks": 0,
       "push": {
@@ -154,10 +154,10 @@
   ],
   "discovered": [
     {
-      "upstream": "sPROFFEs/vitreo-launcher",
+      "upstream": "macbuildssys/ConsentGuard",
       "license": "MIT",
-      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-21T17:22:53Z",
+      "description": "Android accessibility service that auto-rejects cookie and tracking consent banners.",
+      "updated": "2026-10-23T13:38:29Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -166,25 +166,25 @@
       "upstream": "monarchsofchaos004-gif/phoneguard",
       "license": "MIT",
       "description": "Elder phone takeover guard: accessibility-service guard + rescue button + encrypted relay. \u9577\u8f29\u624b\u6a5f\u63a5\u7ba1\u5b88\u9580\u54e8",
-      "updated": "2026-10-21T16:03:43Z",
+      "updated": "2026-10-22T18:20:46Z",
+      "stars": 1,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "KumarManik44/doom-scroll",
+      "license": "MIT",
+      "description": "Open-source Android app that counts the Instagram Reels you scroll each day. React Native + Kotlin Accessibility Service, with a Doom-face overlay. Everything stays on your phone: no accounts, no network.",
+      "updated": "2026-10-22T15:57:27Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "urtuba/tvkeys",
+      "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
-      "description": "Give spare Android TV remote keys a new job. No root, no accessibility service, no input lag.",
-      "updated": "2026-10-20T11:50:16Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "flowangry461-max/sound-overlay-android",
-      "license": "MIT",
-      "description": "Prototype Android overlay that listens for sounds and draws directional indicators. For accessibility/research/demo. Includes a foreground audio service and overlay sample (starter scaffold).",
-      "updated": "2026-10-19T17:23:31Z",
+      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
+      "updated": "2026-10-21T17:22:53Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -202,7 +202,7 @@
       "upstream": "Ngoroth/offline-translator-android",
       "license": "Apache-2.0",
       "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
-      "updated": "2026-10-22T04:14:30Z",
+      "updated": "2026-10-23T05:18:03Z",
       "stars": 3,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -239,6 +239,15 @@
       "license": "Apache-2.0",
       "description": "A privacy-first, 100% local AI assistant orchestrating speech-to-text (Whisper), intelligence (Ollama LLM), and studio-quality speech synthesis (Kokoro ONNX) into a responsive web interface.",
       "updated": "2026-06-23T13:22:37Z",
+      "stars": 1,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "Kohlrabenschwarz/Shizuku",
+      "license": "Apache-2.0",
+      "description": "Unofficial Shizuku 13.6.1 compatibility fork for Android 15 and HyperOS user-service startup issues.",
+      "updated": "2026-09-19T22:50:36Z",
       "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
