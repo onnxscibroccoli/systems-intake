@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23 15:44 UTC",
+  "generated": "2026-10-24 14:31 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,7 +69,7 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-23T11:15:46Z",
+      "pushed": "2026-10-24T05:32:57Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -88,7 +88,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/auto_e2e/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -154,6 +154,15 @@
   ],
   "discovered": [
     {
+      "upstream": "The-Infernix/ShayLock",
+      "license": "MIT",
+      "description": "A strict, native Android screen-time blocker that intercepts Instagram usage using Accessibility Services and inescapable system overlays. Zero PIN bypasses.",
+      "updated": "2026-10-24T08:54:20Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "macbuildssys/ConsentGuard",
       "license": "MIT",
       "description": "Android accessibility service that auto-rejects cookie and tracking consent banners.",
@@ -176,15 +185,6 @@
       "license": "MIT",
       "description": "Open-source Android app that counts the Instagram Reels you scroll each day. React Native + Kotlin Accessibility Service, with a Doom-face overlay. Everything stays on your phone: no accounts, no network.",
       "updated": "2026-10-22T15:57:27Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "sPROFFEs/vitreo-launcher",
-      "license": "MIT",
-      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-21T17:22:53Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
