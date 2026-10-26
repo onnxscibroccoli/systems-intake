@@ -4,7 +4,7 @@ Upstream: https://github.com/autowarefoundation/agnocast
 Fork: https://github.com/onnxscibroccoli/agnocast
 License: Apache-2.0
 Default branch: main
-Upstream pushed: 2026-10-24T05:32:57Z
+Upstream pushed: 2026-10-26T12:09:51Z
 This file is an operator brief written for this account. It is not a substitute for the upstream license. Copyright stays with the upstream authors. Keep their notice if you copy their code.
 
 ## What it is

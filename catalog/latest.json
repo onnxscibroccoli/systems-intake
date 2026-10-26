@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25 14:56 UTC",
+  "generated": "2026-10-26 17:22 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -62,20 +62,20 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/PythonRobotics/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#creat",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-24T05:32:57Z",
+      "pushed": "2026-10-26T12:09:51Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
@@ -88,7 +88,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/auto_e2e/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -157,7 +157,7 @@
       "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
       "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-25T13:32:17Z",
+      "updated": "2026-10-26T11:17:28Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -167,7 +167,7 @@
       "license": "MIT",
       "description": "Fix for Xiaomi Android TV: remote OK button does nothing in the Bluetooth pairing dialog. Tiny open-source accessibility service, no internet permission.",
       "updated": "2026-10-25T12:23:48Z",
-      "stars": 0,
+      "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -211,8 +211,8 @@
       "upstream": "alexturkey/dubworld",
       "license": "Apache-2.0",
       "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
-      "updated": "2026-10-25T14:02:46Z",
-      "stars": 13,
+      "updated": "2026-10-26T16:48:09Z",
+      "stars": 24,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
