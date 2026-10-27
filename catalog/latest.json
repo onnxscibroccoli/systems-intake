@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26 17:22 UTC",
+  "generated": "2026-10-27 16:37 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -56,20 +56,20 @@
     {
       "upstream": "AtsushiSakai/PythonRobotics",
       "license": "MIT",
-      "pushed": "2026-10-24T16:19:30Z",
+      "pushed": "2026-10-26T20:03:04Z",
       "readme_chars": 25652,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/PythonRobotics/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#creat",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-26T12:09:51Z",
+      "pushed": "2026-10-27T12:56:54Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -154,10 +154,19 @@
   ],
   "discovered": [
     {
+      "upstream": "nemarpuc/libaoahid",
+      "license": "MIT",
+      "description": "C++20 host library and C ABI for sending HID input (keyboard, mouse, gamepad, touchscreen, pen) to Android over USB via AOA 2.0 \u2014 no root, no ADB, and no accessibility service required on the device.",
+      "updated": "2026-10-27T07:39:40Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
       "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-26T11:17:28Z",
+      "updated": "2026-10-26T23:24:36Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -190,15 +199,6 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "TonTonEye/Anki_WYSIWYG_Companion_App",
-      "license": "MIT",
-      "description": "A lightweight local Android companion app that provides a clean WYSIWYG editor for AnkiDroid notes, eliminating raw HTML tags like <div> or <br>. Features a built-in formatting toolbar, Cloze shortcuts, and automatic interception via Accessibility Service. 100% offline, private, and compatible with iOS/Windows shared decks.",
-      "updated": "2026-10-24T17:22:03Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "trypsynth/nvgt-bridge",
       "license": "MIT",
       "description": "Android accessibility service that gives NVGT audio games direct touch, while keeping TalkBack for menus, dialogs and the keyboard",
@@ -211,7 +211,7 @@
       "upstream": "alexturkey/dubworld",
       "license": "Apache-2.0",
       "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
-      "updated": "2026-10-26T16:48:09Z",
+      "updated": "2026-10-26T20:50:01Z",
       "stars": 24,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -221,7 +221,7 @@
       "license": "Apache-2.0",
       "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
       "updated": "2026-10-23T05:18:03Z",
-      "stars": 3,
+      "stars": 4,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
