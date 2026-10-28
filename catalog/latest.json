@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27 16:37 UTC",
+  "generated": "2026-10-28 17:09 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -62,7 +62,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/PythonRobotics/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#creat",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -75,20 +75,20 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-25T12:09:12Z",
+      "pushed": "2026-10-28T06:36:17Z",
       "readme_chars": 9713,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/auto_e2e/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
@@ -166,7 +166,7 @@
       "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
       "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-10-26T23:24:36Z",
+      "updated": "2026-10-28T03:41:20Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -208,20 +208,20 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "alexturkey/dubworld",
+      "upstream": "Ngoroth/offline-translator-android",
       "license": "Apache-2.0",
-      "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
-      "updated": "2026-10-26T20:50:01Z",
-      "stars": 24,
+      "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
+      "updated": "2026-10-28T05:44:31Z",
+      "stars": 4,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "Ngoroth/offline-translator-android",
+      "upstream": "alexturkey/dubworld",
       "license": "Apache-2.0",
-      "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
-      "updated": "2026-10-23T05:18:03Z",
-      "stars": 4,
+      "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
+      "updated": "2026-10-26T20:50:01Z",
+      "stars": 33,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
