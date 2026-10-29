@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28 17:09 UTC",
+  "generated": "2026-10-29 17:25 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -82,7 +82,7 @@
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-10-28T06:36:17Z",
+      "pushed": "2026-10-29T06:01:49Z",
       "readme_chars": 9713,
       "translated_blocks": 0,
       "push": {
@@ -154,11 +154,20 @@
   ],
   "discovered": [
     {
+      "upstream": "The-Infernix/ShayLock",
+      "license": "MIT",
+      "description": "A strict, native Android screen-time blocker that intercepts Instagram usage using Accessibility Services and inescapable system overlays. Zero PIN bypasses.",
+      "updated": "2026-10-29T10:52:17Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
       "description": "C++20 host library and C ABI for sending HID input (keyboard, mouse, gamepad, touchscreen, pen) to Android over USB via AOA 2.0 \u2014 no root, no ADB, and no accessibility service required on the device.",
-      "updated": "2026-10-27T07:39:40Z",
-      "stars": 0,
+      "updated": "2026-10-29T13:49:36Z",
+      "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -181,20 +190,11 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "The-Infernix/ShayLock",
-      "license": "MIT",
-      "description": "A strict, native Android screen-time blocker that intercepts Instagram usage using Accessibility Services and inescapable system overlays. Zero PIN bypasses.",
-      "updated": "2026-10-25T08:31:37Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "monarchsofchaos004-gif/phoneguard",
       "license": "MIT",
       "description": "Elder phone takeover guard: accessibility-service guard + rescue button + encrypted relay. \u9577\u8f29\u624b\u6a5f\u63a5\u7ba1\u5b88\u9580\u54e8",
       "updated": "2026-10-25T00:36:30Z",
-      "stars": 1,
+      "stars": 2,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -208,10 +208,19 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
+      "upstream": "wlf186/audio-intel",
+      "license": "Apache-2.0",
+      "description": "Offline-first audio/video transcription and speech synthesis for Linux & Windows, with voiceprints, voice cloning, illustrated exports, optional Ollama transcript rewriting, and local Web UI/APIs.",
+      "updated": "2026-10-29T12:11:10Z",
+      "stars": 3,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "Ngoroth/offline-translator-android",
       "license": "Apache-2.0",
       "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
-      "updated": "2026-10-28T05:44:31Z",
+      "updated": "2026-10-29T04:41:11Z",
       "stars": 4,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -221,7 +230,7 @@
       "license": "Apache-2.0",
       "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
       "updated": "2026-10-26T20:50:01Z",
-      "stars": 33,
+      "stars": 34,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -240,15 +249,6 @@
       "description": "Hot TTS daemon with a prosody engine. Piper synthesis + procedural Perlin-noise dynamics for natural delivery, optional RVC voice conversion. Runs as a long-lived service so speech starts instantly.",
       "updated": "2026-09-21T14:59:44Z",
       "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "airecode/AireOfflineTranslate",
-      "license": "Apache-2.0",
-      "description": "A face-to-face conversation translator for Android that runs entirely on the device. Speech recognition, translation and speech synthesis all happen locally \u2014 after the model is downloaded, no text, audio or image ever leaves the phone.  Translation runs on Gemma 4 via Google's LiteRT-LM runtime.",
-      "updated": "2026-08-15T16:54:24Z",
-      "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
