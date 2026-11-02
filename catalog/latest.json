@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01 17:07 UTC",
+  "generated": "2026-11-02 20:46 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -56,33 +56,33 @@
     {
       "upstream": "AtsushiSakai/PythonRobotics",
       "license": "MIT",
-      "pushed": "2026-10-26T20:03:04Z",
+      "pushed": "2026-11-02T20:03:27Z",
       "readme_chars": 25652,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/PythonRobotics/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#creat",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-10-31T12:13:17Z",
+      "pushed": "2026-11-02T10:48:29Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-11-01T16:52:41Z",
+      "pushed": "2026-11-02T07:42:28Z",
       "readme_chars": 9713,
       "translated_blocks": 0,
       "push": {
@@ -154,10 +154,10 @@
   ],
   "discovered": [
     {
-      "upstream": "sPROFFEs/vitreo-launcher",
+      "upstream": "brianwan001/phone-agent",
       "license": "MIT",
-      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
-      "updated": "2026-11-01T16:57:57Z",
+      "description": "AI phone agent for Android \u2014 GLM vision+planning LLMs operate your phone via Accessibility Service. Memory, replay, voice control.",
+      "updated": "2026-11-02T17:38:52Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -166,34 +166,34 @@
       "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
       "description": "C11/C++20 host library with a stable C ABI: send HID input (keyboard, mouse, gamepad, touchscreen, pen) to an Android phone over USB via AOA 2.0. No root, no ADB, no accessibility service on the device. Sister library of libmimhid.",
-      "updated": "2026-11-01T13:28:58Z",
-      "stars": 1,
+      "updated": "2026-11-02T14:04:14Z",
+      "stars": 2,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "osura/apple-music-tv-focus-highlighter",
+      "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
-      "description": "Remote-friendly D-pad navigation for the Apple Music phone app on Android TV / Google TV (accessibility service)",
-      "updated": "2026-11-01T10:40:18Z",
+      "description": "An Android home screen inspired by iOS, with glass surfaces, a four-column grid, App Library and native Android widgets. Android 12 or newer. English by default; no accounts, ads, analytics, root or accessibility service.",
+      "updated": "2026-11-02T13:51:14Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "The-Infernix/ShayLock",
+      "upstream": "JaimeRamirez-coder/KAVACON-2026-Accessibility-Services",
       "license": "MIT",
-      "description": "A strict, native Android screen-time blocker that intercepts Instagram usage using Accessibility Services and inescapable system overlays. Zero PIN bypasses.",
-      "updated": "2026-10-31T11:15:44Z",
+      "description": "Demo educativa para Kavacon 2026 (Paraguay) - charla de Jaime Ram\u00edrez sobre c\u00f3mo el malware bancario moderno abusa de los Accessibility Services de Android para robar datos de tarjetas sin tocar la pantalla.",
+      "updated": "2026-11-02T03:38:14Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "XiuXianInk/auto-scroll-android",
+      "upstream": "eliseord/sin-shorts",
       "license": "MIT",
-      "description": "Android \u65e0\u969c\u788d\u670d\u52a1\uff0c\u6309\u8bbe\u5b9a\u901f\u5ea6\u5300\u901f\u6eda\u52a8\u5c4f\u5e55\uff0c\u9002\u7528\u4e8e\u957f\u65f6\u95f4\u9605\u8bfb | Constant-speed screen scrolling for Android via accessibility service",
-      "updated": "2026-10-29T21:32:22Z",
+      "description": "Android app that selectively blocks short-form video (YouTube Shorts, Instagram Reels, Snapchat Spotlight) without blocking the apps themselves. Accessibility-service rule engine, no network permission, zero dependencies.",
+      "updated": "2026-11-02T02:19:11Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -204,6 +204,15 @@
       "description": "Android accessibility service that gives NVGT audio games direct touch, while keeping TalkBack for menus, dialogs and the keyboard",
       "updated": "2026-10-06T16:47:22Z",
       "stars": 14,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "alexturkey/dubworld",
+      "license": "Apache-2.0",
+      "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
+      "updated": "2026-11-02T08:19:20Z",
+      "stars": 54,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -222,15 +231,6 @@
       "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
       "updated": "2026-10-29T04:41:11Z",
       "stars": 5,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "alexturkey/dubworld",
-      "license": "Apache-2.0",
-      "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
-      "updated": "2026-10-26T20:50:01Z",
-      "stars": 52,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
