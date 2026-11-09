@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08 17:02 UTC",
+  "generated": "2026-11-09 21:25 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -56,13 +56,13 @@
     {
       "upstream": "AtsushiSakai/PythonRobotics",
       "license": "MIT",
-      "pushed": "2026-11-04T05:51:38Z",
+      "pushed": "2026-11-09T20:03:18Z",
       "readme_chars": 25652,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/PythonRobotics",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/PythonRobotics/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#creat",
         "workflow": "unchanged"
       }
     },
@@ -75,7 +75,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -88,7 +88,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/auto_e2e/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -154,11 +154,11 @@
   ],
   "discovered": [
     {
-      "upstream": "Driveknight01/android-snap-key",
+      "upstream": "sPROFFEs/vitreo-launcher",
       "license": "MIT",
-      "description": "A native Jetpack Compose Android app that maps volume button gestures to system actions with zero Accessibility Service overhead",
-      "updated": "2026-11-08T16:54:29Z",
-      "stars": 0,
+      "description": "An Android launcher with iOS-inspired glass, an iOS 16 Classic style and a Cyberpunk HUD. Android 12+, English interface, no accounts, ads or analytics. Google Play services, root and accessibility services are not required.",
+      "updated": "2026-11-09T14:13:39Z",
+      "stars": 2,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -166,8 +166,26 @@
       "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
       "description": "C11/C++20 host library with a stable C ABI: send HID input (keyboard, mouse, gamepad, touchscreen, pen) to an Android phone over USB via AOA 2.0. No root, no ADB, no accessibility service on the device. Sister library of libmimhid.",
-      "updated": "2026-11-07T03:15:39Z",
+      "updated": "2026-11-09T13:04:32Z",
       "stars": 4,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "Praveensenpai/Smart-Keylogger",
+      "license": "MIT",
+      "description": "Android accessibility-service keylogger that uploads accumulated logs to Telegram hourly.",
+      "updated": "2026-11-09T04:55:53Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "Driveknight01/android-snap-key",
+      "license": "MIT",
+      "description": "A native Jetpack Compose Android app that maps volume button gestures to system actions with zero Accessibility Service overhead",
+      "updated": "2026-11-09T04:27:00Z",
+      "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -176,25 +194,7 @@
       "license": "MIT",
       "description": "Android accessibility service for AI-powered text transformation",
       "updated": "2026-11-06T23:15:45Z",
-      "stars": 686,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "AdilSiddiquiHQ/android-app-blocker",
-      "license": "MIT",
-      "description": "Minimal Android app blocker: accessibility service, overlay, schedules, app picker",
-      "updated": "2026-11-05T04:28:10Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "brianwan001/phone-agent",
-      "license": "MIT",
-      "description": "AI phone agent for Android \u2014 GLM vision+planning LLMs operate your phone via Accessibility Service. Memory, replay, voice control.",
-      "updated": "2026-11-04T14:30:10Z",
-      "stars": 0,
+      "stars": 689,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -239,7 +239,7 @@
       "license": "Apache-2.0",
       "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
       "updated": "2026-11-02T08:19:20Z",
-      "stars": 58,
+      "stars": 57,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
