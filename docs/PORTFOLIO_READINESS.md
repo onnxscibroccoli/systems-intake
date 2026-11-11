@@ -11,6 +11,7 @@
 - [README.md](https://github.com/onnxscibroccoli/systems-intake/blob/main/README.md)
 
 **Scoped reference workflow run:** [Inspect the historical GitHub Actions result](https://github.com/onnxscibroccoli/systems-intake/actions/runs/43080175863). Verify its SHA/branch before attributing it to current source; CI success is not live/production evidence.
+Recorded 2026-11-11: run 43080175863 is the `daily-intake` workflow on a `schedule` event at `main` `1690677d5b3e1256918ea18e97426a93e955f6aa`, conclusion success. Current `main` `a754ec3` is that run's own "Daily intake" catalog commit, and `scripts/`, `intake/` and `.github/` are unchanged since then. The workflow has no `pull_request` trigger, so readiness PRs get no CI check. `scripts/intake.py --help` was reproduced locally; fork creation and pushes with `INTAKE_TOKEN` were not exercised.
 
 ## First reviewer command (check prerequisites before executing)
 
