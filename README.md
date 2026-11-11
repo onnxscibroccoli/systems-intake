@@ -1,5 +1,8 @@
 # Systems intake
 
+
+> **Technical reviewers:** [Source-linked engineering evidence and ordered next steps](docs/PORTFOLIO_READINESS.md) · [tracking issue](https://github.com/onnxscibroccoli/systems-intake/issues/1). These records do not certify production behavior.
+
 Daily fork-and-brief job for [onnxscibroccoli](https://github.com/onnxscibroccoli).
 
 The digest explains the field. This repository does the work:
