@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12 18:54 UTC",
+  "generated": "2026-11-13 18:31 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -75,7 +75,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -154,20 +154,29 @@
   ],
   "discovered": [
     {
-      "upstream": "Houzcetin/netflix-tv-remote-helper",
+      "upstream": "Jayanth-Kurapati/netflix-autoplay",
       "license": "MIT",
-      "description": "Use a normal TV remote with the phone version of Netflix on old/uncertified Android TVs - an accessibility service that turns D-pad presses into taps.",
-      "updated": "2026-11-11T00:04:13Z",
+      "description": "An open, privacy-focused Android utility that automates Netflix intro, recap, and next-episode skipping using Android Accessibility Services.",
+      "updated": "2026-11-13T14:19:08Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "tripathiakash/camgrid-tv",
+      "upstream": "cpufreestyle/bg-keepalive",
       "license": "MIT",
-      "description": "Watch CP PLUS gCMOB cameras on Android TV: setup guide + CamGrid, a tiny accessibility service that opens your camera grid hands-free. Unofficial.",
-      "updated": "2026-11-10T17:21:44Z",
+      "description": "KernelSU/Magisk module that keeps selected apps background-exempt and repairs dropped accessibility services",
+      "updated": "2026-11-13T13:51:36Z",
       "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "anonymousagyat/Anotxt",
+      "license": "MIT",
+      "description": "Android background text recording and accessibility service utility.",
+      "updated": "2026-11-13T12:46:21Z",
+      "stars": 1,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -175,25 +184,16 @@
       "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
       "description": "C11/C++20 host library with a stable C ABI: send HID input (keyboard, mouse, gamepad, touchscreen, pen) to an Android phone over USB via AOA 2.0. No root, no ADB, no accessibility service on the device. Sister library of libmimhid.",
-      "updated": "2026-11-10T12:39:41Z",
+      "updated": "2026-11-13T07:50:49Z",
       "stars": 4,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "sPROFFEs/vitreo-launcher",
+      "upstream": "iqbaladinur/hpctl",
       "license": "MIT",
-      "description": "An Android launcher with iOS-inspired glass, an iOS 16 Classic style and a Cyberpunk HUD. Android 12+, English interface, no accounts, ads or analytics. Google Play services, root and accessibility services are not required.",
-      "updated": "2026-11-09T14:13:39Z",
-      "stars": 3,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "Driveknight01/android-snap-key",
-      "license": "MIT",
-      "description": "A native Jetpack Compose Android app that maps volume button gestures to system actions with zero Accessibility Service overhead",
-      "updated": "2026-11-09T04:27:00Z",
+      "description": "Drive an Android phone by element name over adb \u2014 no stored coordinates, optional accessibility-service companion for 40x faster screen reads",
+      "updated": "2026-11-12T23:42:01Z",
       "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -211,7 +211,7 @@
       "upstream": "wlf186/audio-intel",
       "license": "Apache-2.0",
       "description": "Offline-first audio/video transcription and speech synthesis for Linux & Windows, with voiceprints, voice cloning, illustrated exports, optional Ollama transcript rewriting, and local Web UI/APIs.",
-      "updated": "2026-11-12T18:41:23Z",
+      "updated": "2026-11-13T03:28:36Z",
       "stars": 3,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
