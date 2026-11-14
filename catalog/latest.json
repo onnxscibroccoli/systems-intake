@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13 18:31 UTC",
+  "generated": "2026-11-14 17:05 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,13 +69,13 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-11-12T09:10:07Z",
+      "pushed": "2026-11-14T11:38:11Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
@@ -154,6 +154,15 @@
   ],
   "discovered": [
     {
+      "upstream": "paulablaza/yappity-mobile",
+      "license": "MIT",
+      "description": "Free voice typing for Android. Tap Yappy-chan, yap, paste. Runs on Groq, no accessibility service needed.",
+      "updated": "2026-11-13T19:57:15Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "Jayanth-Kurapati/netflix-autoplay",
       "license": "MIT",
       "description": "An open, privacy-focused Android utility that automates Netflix intro, recap, and next-episode skipping using Android Accessibility Services.",
@@ -183,18 +192,9 @@
     {
       "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
-      "description": "C11/C++20 host library with a stable C ABI: send HID input (keyboard, mouse, gamepad, touchscreen, pen) to an Android phone over USB via AOA 2.0. No root, no ADB, no accessibility service on the device. Sister library of libmimhid.",
+      "description": "C11/C++20 host library with a stable C ABI: send HID input (keyboard, mouse, gamepad, touchscreen, pen) to an Android phone over USB via AOA 2.0. No root, no ADB, no accessibility service on the device. Related: libmimusb.",
       "updated": "2026-11-13T07:50:49Z",
       "stars": 4,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "iqbaladinur/hpctl",
-      "license": "MIT",
-      "description": "Drive an Android phone by element name over adb \u2014 no stored coordinates, optional accessibility-service companion for 40x faster screen reads",
-      "updated": "2026-11-12T23:42:01Z",
-      "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -239,7 +239,7 @@
       "license": "Apache-2.0",
       "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
       "updated": "2026-11-02T08:19:20Z",
-      "stars": 60,
+      "stars": 61,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
