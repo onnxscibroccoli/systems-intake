@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17 19:50 UTC",
+  "generated": "2026-11-18 19:23 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -69,7 +69,7 @@
     {
       "upstream": "autowarefoundation/agnocast",
       "license": "Apache-2.0",
-      "pushed": "2026-11-17T17:49:48Z",
+      "pushed": "2026-11-18T07:43:27Z",
       "readme_chars": 8713,
       "translated_blocks": 1,
       "push": {
@@ -82,13 +82,13 @@
     {
       "upstream": "autowarefoundation/auto_e2e",
       "license": "Apache-2.0",
-      "pushed": "2026-11-16T11:56:57Z",
+      "pushed": "2026-11-18T10:37:54Z",
       "readme_chars": 10195,
       "translated_blocks": 0,
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/auto_e2e",
-        "brief": "unchanged",
+        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/auto_e2e/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
         "workflow": "unchanged"
       }
     },
@@ -154,6 +154,15 @@
   ],
   "discovered": [
     {
+      "upstream": "sPROFFEs/vitreo-launcher",
+      "license": "MIT",
+      "description": "An Android launcher with iOS-inspired glass, an iOS 16 Classic style and a Cyberpunk HUD. Android 12+, English interface, no accounts, ads or analytics. Google Play services, root and accessibility services are not required.",
+      "updated": "2026-11-18T14:53:52Z",
+      "stars": 5,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "SABIR7718/ShadowCap",
       "license": "MIT",
       "description": "A stealth camera and audio recorder for Android with volume button shortcut. Uses Accessibility Service to start/stop recording secretly.",
@@ -190,15 +199,6 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "cpufreestyle/bg-keepalive",
-      "license": "MIT",
-      "description": "KernelSU/Magisk module that keeps selected apps background-exempt and repairs dropped accessibility services",
-      "updated": "2026-11-16T01:43:03Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "trypsynth/nvgt-bridge",
       "license": "MIT",
       "description": "Android accessibility service that gives NVGT audio games direct touch, while keeping TalkBack for menus, dialogs and the keyboard",
@@ -211,7 +211,7 @@
       "upstream": "wlf186/audio-intel",
       "license": "Apache-2.0",
       "description": "Offline-first audio/video transcription and speech synthesis for Linux & Windows, with voiceprints, voice cloning, illustrated exports, optional Ollama transcript rewriting, and local Web UI/APIs.",
-      "updated": "2026-11-17T12:55:18Z",
+      "updated": "2026-11-18T16:04:15Z",
       "stars": 3,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
@@ -239,7 +239,7 @@
       "license": "Apache-2.0",
       "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
       "updated": "2026-11-02T08:19:20Z",
-      "stars": 73,
+      "stars": 78,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },

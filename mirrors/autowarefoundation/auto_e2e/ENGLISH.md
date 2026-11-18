@@ -4,7 +4,7 @@ Upstream: https://github.com/autowarefoundation/auto_e2e
 Fork: https://github.com/onnxscibroccoli/auto_e2e
 License: Apache-2.0
 Default branch: main
-Upstream pushed: 2026-11-16T11:56:57Z
+Upstream pushed: 2026-11-18T10:37:54Z
 This file is an operator brief written for this account. It is not a substitute for the upstream license. Copyright stays with the upstream authors. Keep their notice if you copy their code.
 
 ## What it is
