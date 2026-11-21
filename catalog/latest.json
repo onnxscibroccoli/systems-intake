@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20 19:05 UTC",
+  "generated": "2026-11-21 17:57 UTC",
   "reports": [
     {
       "upstream": "RikkaApps/Shizuku",
@@ -75,7 +75,7 @@
       "push": {
         "fork": "exists",
         "detail": "onnxscibroccoli/agnocast",
-        "brief": "error PUT https://api.github.com/repos/onnxscibroccoli/agnocast/contents/intake/ENGLISH.md -> 403 {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-u",
+        "brief": "unchanged",
         "workflow": "unchanged"
       }
     },
@@ -154,11 +154,29 @@
   ],
   "discovered": [
     {
+      "upstream": "alzahraramadhani/ShoFast",
+      "license": "MIT",
+      "description": "Shopee Affiliate Video automation system: watermark-free TikTok downloader, Gemini AI captions, anti-bot random scheduling, and auto-upload with affiliate cart tagging via Android Accessibility Service.",
+      "updated": "2026-11-21T16:16:25Z",
+      "stars": 0,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
       "upstream": "nemarpuc/libaoahid",
       "license": "MIT",
       "description": "C11/C++20 host library with a stable C ABI: send HID input (keyboard, mouse, gamepad, touchscreen, pen) to an Android phone over USB via AOA 2.0. No root, no ADB, no accessibility service on the device.",
-      "updated": "2026-11-20T13:08:19Z",
+      "updated": "2026-11-21T11:50:57Z",
       "stars": 5,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "wysebee/wysebee-agent-android",
+      "license": "MIT",
+      "description": "Android app that pairs with Wysebee Cloud and lets one Wysebee agent operate the phone (read the screen, take screenshots, tap, type, swipe, open apps) through an accessibility service, only in the apps you allow. Never types into password fields or takes screenshots of banking or password apps.",
+      "updated": "2026-11-21T00:30:43Z",
+      "stars": 0,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -181,29 +199,29 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "sPROFFEs/vitreo-launcher",
-      "license": "MIT",
-      "description": "An Android launcher with iOS-inspired glass, an iOS 16 Classic style and a Cyberpunk HUD. Android 12+, English interface, no accounts, ads or analytics. Google Play services, root and accessibility services are not required.",
-      "updated": "2026-11-18T14:53:52Z",
-      "stars": 5,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "SABIR7718/ShadowCap",
-      "license": "MIT",
-      "description": "A stealth camera and audio recorder for Android with volume button shortcut. Uses Accessibility Service to start/stop recording secretly.",
-      "updated": "2026-11-17T15:57:03Z",
-      "stars": 0,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "trypsynth/nvgt-bridge",
       "license": "MIT",
       "description": "Android accessibility service that gives NVGT audio games direct touch, while keeping TalkBack for menus, dialogs and the keyboard",
       "updated": "2026-10-06T16:47:22Z",
       "stars": 14,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "alexturkey/dubworld",
+      "license": "Apache-2.0",
+      "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
+      "updated": "2026-11-21T00:21:29Z",
+      "stars": 95,
+      "forked": false,
+      "note": "Discovered for review. Not forked automatically."
+    },
+    {
+      "upstream": "Ngoroth/offline-translator-android",
+      "license": "Apache-2.0",
+      "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
+      "updated": "2026-11-20T22:54:50Z",
+      "stars": 5,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
@@ -217,29 +235,11 @@
       "note": "Discovered for review. Not forked automatically."
     },
     {
-      "upstream": "Ngoroth/offline-translator-android",
-      "license": "Apache-2.0",
-      "description": "Offline Android conversation translator with on-device speech recognition, translation and synthesis.",
-      "updated": "2026-11-16T23:17:17Z",
-      "stars": 5,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
       "upstream": "MC-Oruc/SpeechGen",
       "license": "Apache-2.0",
       "description": "Unreal Engine 5.7 offline speech synthesis plugin with verified Kokoro ONNX runtime provisioning.",
       "updated": "2026-11-07T18:49:11Z",
       "stars": 1,
-      "forked": false,
-      "note": "Discovered for review. Not forked automatically."
-    },
-    {
-      "upstream": "alexturkey/dubworld",
-      "license": "Apache-2.0",
-      "description": "Local-first AI video dubbing pipeline: transcription, translation, speech synthesis and timing alignment.",
-      "updated": "2026-11-02T08:19:20Z",
-      "stars": 92,
       "forked": false,
       "note": "Discovered for review. Not forked automatically."
     },
